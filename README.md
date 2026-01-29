@@ -22,7 +22,7 @@ STEP 3: CREATE EC2 INSTANCE
 In AWS Console search bar, I typed EC2
 Clicked EC2
 Clicked Launch instance
-Entered name: EC2instance1
+Entered name:Ec2_test1
 Selected Amazon Linux 2 AMI
 Selected instance type: t2.micro
 Created or selected a key pair
@@ -38,7 +38,7 @@ Clicked Simple Notification Service
 Clicked Topics
 Clicked Create topic
 Selected Standard
-Topic name: Ec2_alerts
+Topic name: Ec2_test_alerts
 Clicked Create topic 
 review
 
@@ -60,7 +60,7 @@ In AWS Console search bar, I typed Lambda
 Clicked Lambda
 Clicked Create function
 Selected Author from scratch
-Function name: ec2_protest
+Function name: lambda_ec2_1
 Runtime: Python
 Clicked Create function 
 
