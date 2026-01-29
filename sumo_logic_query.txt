@@ -1,0 +1,6 @@
+_index=*
+| json "request_uri", "response_time_ms" as request_uri, response_time_ms nodrop
+| where request_uri = "/api/data"
+| where toLong(response_time_ms) > 3000
+| timeslice 10m
+| count as slow_requests by _timeslice
